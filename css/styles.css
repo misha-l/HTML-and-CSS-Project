@@ -1,0 +1,488 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom Reset Start */
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #1d8ee4;
+	font-family: inherit;
+}
+
+:focus {
+	outline: none;
+}
+
+input {
+	margin: 0;
+	padding: 0;
+}
+/* Custom Reset Start */
+
+/* Page Styles */
+h2{
+ font-size: 30px;
+ margin-bottom: 10px;
+}
+p {
+ font-size: 14px;
+ line-height: 19px;
+ text-align: justify;
+ margin-top: 8px;
+}
+.header {
+    height: 50px;
+    background: #ebebeb;
+	margin-bottom: 20px;
+}
+
+.header .logo,
+.header ul {
+    float: left;
+}
+
+.header .logo {
+	color: #000;
+	margin-right: 40px;
+	line-height: 50px;
+	font-weight: bold;
+}
+
+.header ul li {
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.header ul li a {
+	line-height: 50px;
+}
+
+.header .wrapper {
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header .search {
+	float: right;
+	height: 40px;
+	margin-top: 5px;
+}
+
+.header .search input {
+	width: 200px;
+	display: inline-block;
+	height: 100%;
+	border: 1px solid #c3c3c3;
+	box-sizing: border-box;
+	margin-right: 15px;
+	padding: 0 10px;
+	font-size: 16px;
+}
+
+.header .btn-search {
+	color: #fff;
+	height: 100%;
+	display: inline-block;
+	background: #1d8ee4;
+	vertical-align: top;
+	padding: 0 15px;
+	cursor: pointer;
+	line-height: 38px;
+}
+
+.main, footer {
+    width: 1170px;
+    margin: 0 auto;
+}
+.main-top{
+	padding-bottom: 20px;
+ }
+.main-top .breadcrumb {
+	margin-bottom: 20px;
+}
+
+.main-top .breadcrumb li {
+	display: inline-block;
+	margin-right: 15px;
+
+}
+
+.main-top .breadcrumb li::after {
+	content: "/";
+	padding-left: 15px;
+	color: #cdcdcd;
+}
+
+.main-top .breadcrumb li:last-child::after {
+	content: "";
+}
+
+.main-top .breadcrumb li,
+.main-top .breadcrumb a {
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.main-top .breadcrumb a:hover {
+	color: #cdcdcd;
+}
+.top-images{
+ float: left;
+ display: inline-block;
+ }
+
+.top-images > img,
+.top-images ul li img {
+	border: 1px solid #c5c5c5;
+	padding: 3px;
+}
+
+.top-images > img {
+	margin-bottom: 10px;
+}
+
+.top-images ul {
+	width: 568px;
+}
+
+.top-images ul li {
+	display: inline-block;
+	width: 127px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	margin-right: 20px;
+}
+
+.top-images ul li:last-child {
+	margin-right: 0;
+}
+
+.top-images ul li img {
+	width: 127px;
+	box-sizing: border-box;
+}
+.top-product-info {
+ float: left;
+ width: 570px;
+ margin-left: 30px;
+ display: inline-block;
+}
+.top-product-info h2 {
+ font-size: 30px;
+ margin-bottom: 15px;
+}
+.top-product-info p{
+  margin-bottom: 10px;
+	line-height: 22px;
+ }
+.size-select-input{
+  float: left;
+  width: 100%;
+	margin-bottom: 5px;
+	margin-top: 15px;
+ }
+.size-select{
+ float: left;
+  width: 100%;
+	height: 33px;
+	line-height: 33px;
+	margin-bottom: 25px;
+	color: #a9a9a9;
+}
+.quantity-label {
+ float: left;
+  width: 24%;
+	line-height: 33px;
+}
+.quantity-value{
+  float: left;
+  width: 75%;
+	height: 33px;
+	text-indent: 5px;
+}
+a.bye-now-button{
+ float: left;
+ width: 100%;
+ background: #2199e8;
+ text-transform: uppercase;
+ line-height: 56px;
+ margin-top: 25px;    
+ text-align: center;   
+ color: #fff;                                                                                                                        
+} 
+.social{
+  float: left;
+	width: 100%;
+	margin-top: 15px;
+	
+ }  
+.social a{
+  float: left;
+	position: relative;
+  background: #777777;
+	margin-right: 1px;
+	width: 33%;
+	text-align: center;
+	height: 34px;
+	line-height: 34px;
+	color: #fff;
+ }
+.social a:last-child{
+  margin-right: 0;
+ }
+.product-info{
+ margin-top: 20px;
+ }
+.tabs-group{
+ width: 100%;
+ border: 1px solid #e6e6e6;
+}
+.tabs-group li{
+  float: left;
+ }
+.tabs-group li a{
+  float: left;
+	padding: 18px;
+	font-size: 14px;
+ }
+.tabs-group li a.selected{
+  background: #e6e6e6; 
+ }
+.box-wrap{
+ float: left;
+ width: 100%;
+ border-left: 1px solid #e6e6e6;
+ border-right: 1px solid #e6e6e6;
+ border-bottom: 1px solid #e6e6e6;
+
+ }
+.in-box-wrap{
+  padding: 18px;
+}
+.box-wrap h2{
+
+ font-size: 24px;
+ margin-bottom: 10px;
+ }
+.list1
+ {
+  float: left;
+	margin
+ }
+ 
+.list1 img, .right-side-list1 {
+ float: left;
+ margin-bottom: 25px;
+ }
+
+.list1 img{
+	margin-right: 25px;
+ }
+.right-side-list1{
+ width: 890px;
+ }
+.list1 h3{
+ font-size: 20px;
+ margin-bottom: 10px;
+ }
+.list1 p{
+ font-size: 14px;
+ }
+footer{
+  float: left;
+	width: 100%;
+  margin-top: 20px;
+	padding-top: 20px;
+	margin-bottom: 30px;
+	border-top: 1px solid #cacaca;
+ }
+.reviews label{
+  float: left;
+	width: 100%;
+ }
+.reviews textarea{
+  float: left;
+	width: 100%;
+	
+ }
+.list2{
+ float: left;
+ width: 216px;
+ margin-top: 25px;
+ margin-bottom: 25px;
+ margin-right:10px;
+ }
+.list2 img{
+	width: 205px;
+ }
+.list2 h3{
+ font-size: 23px;
+ color: #000;
+ margin-top: 6px;
+ margin-bottom: 6px;
+ }
+.list2 h3 i{
+ font-size: 15px;
+ color: #cacaca;
+ }
+.list2 p{
+  font-size: 14px;
+ }
+.list2 a.bye-now{
+  float: left;
+	margin-top: 10px;
+  padding: 4px;
+	border: 1px solid #2898e5;
+	width: 205px;
+	text-align: center;
+	font-size: 12px;
+ }
+.centered-text{
+  text-align: center;
+ }
+h1{
+  font-size: 33px;
+	margin-bottom: 18px;
+ }
+.page1top-buttons{
+  margin-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #c2c2c2;
+}
+.centered-horizontal-div{
+ float: left;
+ width:100%;
+
+}
+.centered-horizontal-div-in{
+  display: table;
+    margin: 0 auto;
+ }
+.button{
+  background: #2898e5;
+	padding: 10px;
+	font-size: 15px;
+	margin-right: 10px;
+	border: 1px solid #2898e5;
+	color: #ffffff;
+ }
+.white-button{
+  background: #ffffff;
+	color: #2898e5;
+ }
+.page1-info{
+  float: left;
+  margin-top: 30px;
+ }
+.image-border{
+   border: 1px solid #c5c5c5;
+    padding: 3px;
+}
+.right-50percent-image{
+  float: right;
+	width: 50%;
+	margin-left: 20px;
+ }
+.page-div{
+  float: left;
+	width: 100%;
+	margin-top: 20px;
+ }
+.column30percent{
+  float: left;
+	width: 32%;
+	margin-right: 2%;
+	margin-bottom: 30px;
+ }
+.column30percent:nth-child(3n+3){
+ margin-right: 0;
+ }
+.border-bottom-div{
+ border-bottom: 1px solid #c2c2c2;
+}
+.accents{ 
+ float: left;
+ color: #2898e5;
+ margin-bottom: 25px;
+ width: 20%;
+ text-align: center;
+}
+.accents b{
+ float: left;
+  font-size: 30px;
+	width: 100%;
+ }
+.list4{
+ float: left;
+ width:23%;
+ margin-right: 2.6%;
+ margin-bottom: 20px;
+}
+.list4:nth-of-type(4n+4){
+ margin-right: 0;
+}
+.list4 a img{
+ width:100%;
+ box-sizing: border-box;
+}
+footer span{
+ float: left;
+}
+footer a{
+ float: left;
+ margin-left: 15px;
+}
+footer p{
+ float: right;
+}
